@@ -1,9 +1,9 @@
 package polymorphism;
 
-import weapon.Ak47;
-import weapon.WaterGun;
-import weapon.Weapon;
-import weapon.Pistol;
+import polymorphism.weapon.Ak47;
+import polymorphism.weapon.WaterGun;
+import polymorphism.weapon.Weapon;
+import polymorphism.weapon.Pistol;
 
 public class Player {
     private Weapon[] weaponSlots;

@@ -1,4 +1,4 @@
-package weapon;
+package polymorphism.weapon;
 
 public class WaterGun extends Weapon {
     @Override

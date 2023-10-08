@@ -1,6 +1,4 @@
-package weapon;
-
-import weapon.Weapon;
+package polymorphism.weapon;
 
 public class Ak47 extends Weapon {
     @Override
