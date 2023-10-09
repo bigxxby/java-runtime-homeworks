@@ -19,7 +19,7 @@ public class Main {
     //
     //9 Найти максимальный и минимальный элементы массива (Необходимо определить максимальный и минимальный элементы в массиве и вывести их).
     public static void main(String[] args) {
-        int[] array = {1, 2, 5, 8, 0, 4, 8, 6};
+        int[] array = {7, -3, 9, -11, 18, 99, 2, 11};
 
         //1
         for (int i = 0; i < array.length - 1; i++) {
@@ -39,6 +39,43 @@ public class Main {
             System.out.println(array[i]);
 
         }
+        //5
+        for (int i = array.length - 3; i < array.length; i++) {
+            System.out.println(array[i]);
+        }
+        //6
+        for (int i = 1; i < array.length; i += 2) {
+            System.out.println(array[i]);
+        }
+        //7
+        int countP = 0;
+        int countN = 0;
+        for (int i = 0; i < array.length - 1; i++) {
+            if (array[i] < 0) {
+                countN++;
+            } else {
+                countP++;
+            }
+        }
+        System.out.println(countP + " " + countN);
+
+        for (int i = 0; i < array.length - 1; i++) {
+            if (array[i] < array[i + 1]) {
+                System.out.println(array[i + 1]);
+            }
+        }
+        //9
+        int min = array[0];
+        int max = array[0];
+        for (int i = 1; i < array.length - 1; i++) {
+            if (array[i] > array[i - 1] && array[i] > max) {
+                max = array[i];
+            }
+            if (array[i] < array[i - 1] && array[i] < min) {
+                min = array[i];
+            }
+        }
+        System.out.println(max + " " + min);
 
 
     }
